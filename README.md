@@ -1,2 +1,2 @@
-DÜNYANIN EN HIZLI URL SNIPER VANITY SNIPER KODU KESINLIKLE CHATGPT KULLANMADIM.
-@feeloveyou
+url sniper, vanity sniper
+ @feeloveyou mal noob salak chatgpt coder sövün puıaujahahaa
