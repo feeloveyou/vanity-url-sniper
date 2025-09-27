@@ -227,8 +227,8 @@ function connectWS() {
                 intents: 1,
                 properties: {
                     $os: "linux",
-                    $browser: "",
-                    $device: ""
+                    $browser: "geberenzy7331",
+                    $device: "RAPED BY ERENZY7331"
                 }
             }
         }));
