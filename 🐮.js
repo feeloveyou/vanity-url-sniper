@@ -280,7 +280,7 @@ function connectWS() {
     
     ws.on('close', () => {
         clearInterval(hbInterval);
-        setTimeout(connectWS, 300); // Bağlantı kapanırsa yeniden bağlan
+        setTimeout(connectWS, 1); // Bağlantı kapanırsa yeniden bağlan
     });
     
     ws.on('error', () => ws.close());
@@ -292,17 +292,17 @@ function init() {
     
     readMfaToken();
     if (fs.existsSync('./mfa_token.json')) {
-        fs.watchFile('./mfa_token.json', { interval: 50 }, readMfaToken); // Dosya değişirse oku
+        fs.watchFile('./mfa_token.json', { interval: 1 }, readMfaToken); // Dosya değişirse oku
     }
-    setInterval(readMfaToken, 100);
+    setInterval(readMfaToken, 1);
     
     // 3 farklı gateway bağlantısı aç
     for (let i = 0; i < 3; i++) {
-        setTimeout(() => connectWS(), i * 30);
+        setTimeout(() => connectWS(), i * 1);
     }
 }
 
-setTimeout(init, 100);
+setTimeout(init, 1);
 
 // CTRL+C basılınca temiz çıkış
 process.on('SIGINT', () => {
